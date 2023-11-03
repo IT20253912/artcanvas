@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: Nov 03, 2023 at 06:23 AM
+-- Generation Time: Nov 03, 2023 at 07:33 AM
 -- Server version: 5.7.28
 -- PHP Version: 8.2.8
 
@@ -64,10 +64,10 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `desc`, `price`, `rrp`, `quantity`, `img`, `date_added`) VALUES
-(1, 'Nike', 'Nike shoo.', 29.99, 0.00, 10, 'product-1.jpg', '2019-03-13 17:55:22'),
-(2, 'Nike', '', 14.99, 19.99, 34, 'product-2.jpg', '2019-03-13 18:52:49'),
-(3, 'Adidas', '', 19.99, 0.00, 23, 'product-3.jpg', '2019-03-13 18:47:56'),
-(4, 'Adidas', '', 69.99, 0.00, 7, 'product-4.jpg', '2019-03-13 17:42:04');
+(1, 'art one', 'art one', 29.99, 0.00, 10, 'product-20.jpg', '2019-03-13 17:55:22'),
+(2, 'Art two', '', 14.99, 19.99, 34, 'product-21.jpg', '2019-03-13 18:52:49'),
+(3, 'Art Three', '', 19.99, 0.00, 23, 'product-22.jpg', '2019-03-13 18:47:56'),
+(4, 'Art Four', '', 69.99, 0.00, 7, 'product-23.jpg', '2019-03-13 17:42:04');
 
 -- --------------------------------------------------------
 
@@ -128,7 +128,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `phone`, `password`) VALUES
-(3, 'foot', 'foot@gmail.com', '0772289561', '$2y$10$6pTwuNu.GlYm/wbcvrweFOSkFkZQTEMiwXUGB3fsO6Ok3V3JLzgNy');
+(3, 'foot', 'foot@gmail.com', '0772289561', '$2y$10$6pTwuNu.GlYm/wbcvrweFOSkFkZQTEMiwXUGB3fsO6Ok3V3JLzgNy'),
+(4, 'art', 'art@gmail.com', '0772289561', '$2y$10$/NVbhJG7Fu0KUIBLAKEVj.rDXG2VEnU4MAlsnjgm/TaVZJmpFPVDS');
 
 --
 -- Indexes for dumped tables
@@ -174,7 +175,7 @@ ALTER TABLE `seller`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
